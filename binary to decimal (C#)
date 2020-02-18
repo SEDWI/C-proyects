@@ -1,0 +1,39 @@
+void transcribidor(){
+Console.Title("Transcribidor");
+
+//variables
+int n1 = 0;
+
+
+//error
+void error (){
+ Console.WriteLine("se ha detectado un error");
+ Enviroment.Exit ()
+}
+
+//important
+void transcribidor.db(){
+   //leer numero en decimal 
+   Console.WriteLine("Type the number");
+   n1 = Convert.ToInt32(Console.ReadLine();
+
+   //delcarar un variable para el numero en binario
+   string binario = "";
+
+   if(n1 > 0){
+    while (n1  > 0){
+      if(n1 % 2 == 0){
+       binario = "0" + binario;
+      }else{
+       binario = "1" + binario;
+      }
+      n1 =  n1 / 2;
+    }else if (n1 == 0){
+     binario = "0";
+    }else {
+     error()
+    }    
+
+ }
+
+}
